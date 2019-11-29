@@ -79,7 +79,6 @@ name_arr.each do |i|
     value = i[1]
       key = i[0]
         else name_hash = name_hash{}
-        end
       end
     end
   return key
