@@ -74,15 +74,69 @@ key= 0
 
 # Iterate new array
 name_arr.each do |i|
-    # If current value is lower than default, change value&key
-    if i[1] < value && value > i[1]
-      value = i[1]
-        key = i[0]
-          elsif
-            return nil
-          else name_hash = name_hash{}
-        return nil
-      end
-  end
-return key
+# If current value is lower than default, change value&key
+  if i[1] < value && value > i[1]
+    value = i[1]
+      key = i[0]
+        else name_hash = name_hash{}
+        end
+      end    
+    end  
+  return key
 end
+
+
+# prereqs: iterators, hashes, conditional logic
+# Given a hash with numeric values, return the key for the smallest value
+
+# def key_for_min_value(name_hash)
+# # binding.pry
+#     if name_hash = {}
+#       puts nil
+#     else  name_hash.invert.size {|key, value| value == name_hash }
+#     # binding.pry
+#       puts name_hash
+#     # binding.pry
+#     end
+# end
+
+
+
+# def key_for_min_value(name_hash)
+#               # binding.pry
+#   if name_hash.map.each {|value|}
+#               # binding.pry
+#       puts name_hash
+#               # binding.pry
+#   elsif name_hash == {}
+#               # binding.pry
+#       puts nil
+#   else name_hash == {}
+#               # binding.pry
+#       puts nil
+#      end
+#   return name_hash
+# end
+
+# def key_for_min_value(name_hash)
+# # Convert hash to array
+# name_arr = name_hash.to_a
+# 
+# # Default key value
+# value= 1000
+# key= 0
+# 
+# # Iterate new array
+# name_arr.each do |i|
+#     # If current value is lower than default, change value&key
+#     if i[1] < value
+#       value = i[1]
+#         key = i[0]
+#           elsif value < i
+#             return nil
+#           else name_hash = name_hash{}
+#         return nil
+#       end
+#   end
+# return key
+# end
