@@ -75,10 +75,10 @@ key= 0
 # Iterate new array
 name_arr.each do |i|
     # If current value is lower than default, change value&key
-    if i[1] < value
+    if i[1] < value && value > i[1]
       value = i[1]
         key = i[0]
-          elsif value > i
+          elsif 
             return nil
           else name_hash = name_hash{}
         return nil
