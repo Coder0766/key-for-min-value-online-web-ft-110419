@@ -78,7 +78,7 @@ name_arr.each do |i|
     if i[1] < value && value > i[1]
       value = i[1]
         key = i[0]
-          elsif 
+          elsif
             return nil
           else name_hash = name_hash{}
         return nil
