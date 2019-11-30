@@ -76,7 +76,7 @@ name_arr.each.collect do |i|
         return nil
       end
     end
-  return key
+  return a_key
 end
 
 
