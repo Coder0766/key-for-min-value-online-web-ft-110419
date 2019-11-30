@@ -65,28 +65,20 @@
 # end
 
 def key_for_min_value(name_hash)
-  name_hash.reduce{ |k, v| k.last > v.last ? k : v }.first
+name_arr = name_hash.to_a
+
+value= 1000
+key= 0
+
+name_arr.each.collect do |i|
+  if i[1] < value
+    value = i[1]
+      key = i[0]
+        else name_hash = name_hash{}
+      end
+    end
+  return key
 end
-
-
-# Convert hash to array
-# name_arr = name_hash.to_a
-#
-# # Default key value
-# value= 1000
-# key= 0
-#
-# # Iterate new array
-# name_arr.each do |i|
-# # If current value is lower than default, change value&key
-#   if i[1] < value
-#     value = i[1]
-#       key = i[0]
-#         else name_hash = name_hash{}
-#       end
-#     end
-#   return key
-# end
 
 
 
