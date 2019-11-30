@@ -67,7 +67,7 @@
 def key_for_min_value(name_hash)
 name_arr = name_hash.to_a
 key= 0
-value= num > 0
+value > 0
 name_arr.each.collect do |i|
   if i[1] < value
     key = i[0]
