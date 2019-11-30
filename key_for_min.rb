@@ -2,6 +2,36 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
+
+def key_for_min_value(name_hash)
+  lowest_value = 0
+  lowest_key = nil
+  
+  name_hash.each do |key,value|
+
+    if lowest_value == 0 || value < lowest_value
+      lowest_value = value 
+        lowest_key = key
+      end
+    end
+  lowest_key
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # def key_for_min_value(name_hash)
 # # binding.pry
 #     if name_hash.invert.size {|key, value| value < name_hash }
@@ -64,20 +94,20 @@
 #   return name_hash
 # end
 
-def key_for_min_value(name_hash)
-name_arr = name_hash.to_a
-a_key= 0
-a_value= 1000
-name_arr.each.collect do |i|
-  if i[1] < a_value
-    a_key = i[0]
-      a_value = i[1]
-        else name_hash = name_hash{}
-        return nil
-      end
-    end
-  return a_key
-end
+# def key_for_min_value(name_hash)
+# name_arr = name_hash.to_a
+# a_key= 0
+# a_value= 1000
+# name_arr.each.collect do |i|
+#   if i[1] < a_value
+#     a_key = i[0]
+#       a_value = i[1]
+#         else name_hash = name_hash{}
+#         return nil
+#       end
+#     end
+#   return a_key
+# end
 
 
 
