@@ -75,6 +75,7 @@ name_arr.each.collect do |i|
     value = i[1]
       key = i[0]
         else name_hash = name_hash{}
+        return nil
       end
     end
   return key
