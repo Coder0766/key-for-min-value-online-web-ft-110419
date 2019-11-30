@@ -69,9 +69,9 @@ name_arr = name_hash.to_a
 key= name
 value= number
 name_arr.each.collect do |i|
-  if i[] < value
-    value = i[]
-      key = i[]
+  if i[0] < value
+    value = i[0]
+      key = i[0]
         else name_hash = name_hash{}
         return nil
       end
