@@ -71,11 +71,11 @@ end
 
 # Convert hash to array
 # name_arr = name_hash.to_a
-# 
+#
 # # Default key value
 # value= 1000
 # key= 0
-# 
+#
 # # Iterate new array
 # name_arr.each do |i|
 # # If current value is lower than default, change value&key
