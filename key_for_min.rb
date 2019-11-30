@@ -70,8 +70,8 @@ key= 0
 value= num > 0
 name_arr.each.collect do |i|
   if i[1] < value
-    key = i[1]
-      value = i[0]
+    key = i[0]
+      value = i[1]
         else name_hash = name_hash{}
         return nil
       end
